@@ -19,7 +19,7 @@ export default function Home() {
           className="text-center md:text-left w-full md:w-3/4"
         >
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
-            Hello, I'm Matthew
+            Hello, I&apos;m Matthew
           </h1>
           <p className="text-xl mt-2 text-secondary-foreground">
             Welcome to my portfolio website.

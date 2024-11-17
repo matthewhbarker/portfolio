@@ -25,8 +25,8 @@ export default function ContactMe() {
           Contact Me
         </h1>
         <p className="text-xl text-center mb-10 text-muted-foreground">
-          For any questions or inquiries, please don't hesitate to email me or
-          shoot me a message on LinkedIn.
+          For any questions or inquiries, please don&apos;t hesitate to email me
+          or shoot me a message on LinkedIn.
         </p>
 
         <div className="flex justify-center gap-8">
