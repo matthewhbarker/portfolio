@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Navbar,
   NavbarMenu,
@@ -20,10 +20,15 @@ const menuItems = [
 ];
 
 const AppNavbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentPath, setCurrentPath] = useState<string>("");
 
-  // Get the current pathname
-  const currentPath = window.location.pathname;
+  useEffect(() => {
+    // This ensures that `window` is available only on the client side
+    if (typeof window !== "undefined") {
+      setCurrentPath(window.location.pathname);
+    }
+  }, []);
 
   return (
     <Navbar
