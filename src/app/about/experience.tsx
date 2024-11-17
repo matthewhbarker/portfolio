@@ -13,13 +13,7 @@ interface ExperienceProps extends React.ComponentPropsWithoutRef<"ol"> {
   experience: JobExperience[];
 }
 
-const ExperienceItem = ({
-  job,
-  index,
-}: {
-  job: JobExperience;
-  index: number;
-}) => {
+const ExperienceItem = ({ job }: { job: JobExperience }) => {
   const ref = React.useRef<HTMLLIElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -77,8 +71,8 @@ export const Experience = ({
 }: ExperienceProps) => {
   return (
     <ol className={cn("relative border-l-2", className)} {...props}>
-      {experience.map((job, index) => (
-        <ExperienceItem job={job} index={index} key={job.startDate} />
+      {experience.map((job) => (
+        <ExperienceItem job={job} key={job.startDate} />
       ))}
     </ol>
   );
