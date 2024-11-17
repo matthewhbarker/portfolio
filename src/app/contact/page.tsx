@@ -15,7 +15,7 @@ export default function ContactMe() {
 
   return (
     <motion.div
-      className="bg-background h-[90vh] flex flex-col items-center justify-center py-20"
+      className="bg-background h-[90vh] flex flex-col items-center justify-center -mt-20 md:mt-0"
       initial="hidden"
       animate="visible"
       variants={fadeInVariant}

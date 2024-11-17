@@ -7,10 +7,10 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 export default function Home() {
   return (
-    <div className="bg-background h-[90vh] overflow-x-hidden">
+    <div className="bg-background h-full md:h-[90vh] overflow-x-hidden">
       {/* Full-width background */}
 
-      <MaxWidthWrapper className="flex flex-col md:flex-row items-center justify-center h-[90vh] px-8 gap-y-8">
+      <MaxWidthWrapper className="flex flex-col md:flex-row items-center justify-start md:justify-center h-[90vh] px-8 gap-y-8">
         {/* Left side: Text */}
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -39,7 +39,7 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="relative mx-auto w-[48%] md:w-[50%] max-w-[350px]"
+          className="relative mx-auto w-[70%] md:w-[50%] max-w-[350px]"
         >
           <Image
             isBlurred
