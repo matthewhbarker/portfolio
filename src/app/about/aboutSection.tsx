@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
     <div className="mb-[10vh]">
-      <p className="text-lg font-extralight mt-2 text-muted-foreground mx-5 text-justify">
+      <p className="text-lg font-extralight mt-2 text-muted-foreground mx-2 text-justify">
         Hello! I&apos;m Matthew Barker, a Computer Science graduate with a
         lifelong fascination for technology. From an early age, I found myself
         captivated by how things work, especially when it came to computers.
