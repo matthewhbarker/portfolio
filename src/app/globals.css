@@ -5,7 +5,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -67,6 +66,13 @@ body {
   * {
     @apply border-border;
   }
+
+  /* Apply background color globally */
+  html, body, #__next {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+  
   body {
     @apply bg-background text-foreground;
   }

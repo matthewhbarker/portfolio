@@ -17,7 +17,7 @@ const ExperienceItem = ({ job }: { job: JobExperience }) => {
   const ref = React.useRef<HTMLLIElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center center"],
+    offset: ["start 0.95", "start 0.55"],
   });
 
   // Animating each individual item

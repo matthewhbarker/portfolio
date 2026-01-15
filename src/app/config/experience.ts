@@ -11,11 +11,21 @@ export interface JobExperience {
 
 export const JOB_EXPERIENCE = [
   {
+    ocupation: "Manager",
+    company: "Ravenskill Orchards and Gabbies Cider",
+    location: "Gabriola Island",
+    url: "https://ravenskill.com/",
+    startDate: "2025-03-01",
+    description:
+      "Played a crucial role across various areas of the business to support day-to-day operations and long-term growth initiatives. Operated in a highly self-directed role, applying a broad skill set including leadership, communication, and technical problem-solving.",
+  },
+  {
     ocupation: "Electoral Equipment Officer",
     company: "Elections BC",
     location: "Vancouver",
     url: "https://www.elections.bc.ca/",
     startDate: "2024-08-01",
+    endDate: "2024-12-01",
     description:
       "Played a key role in managing the election process in the West Point Grey electoral district. Responsibilities included testing, organizing, and deploying election-related equipment, including network and electrical systems. Assisted in recruitment and collaborated with Deputy Officers to ensure smooth election operations.",
   },
